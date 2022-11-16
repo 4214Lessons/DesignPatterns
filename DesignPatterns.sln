@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{6F8D1CBF-C2B3-431D-B153-2A86B056DF5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{6F8D1CBF-C2B3-431D-B153-2A86B056DF5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{EC1B94FE-FF01-41EE-8795-D478D72602C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{EC1B94FE-FF01-41EE-8795-D478D72602C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{38903337-324C-439D-90A6-64B82EA9E8D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{38903337-324C-439D-90A6-64B82EA9E8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{38903337-324C-439D-90A6-64B82EA9E8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38903337-324C-439D-90A6-64B82EA9E8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38903337-324C-439D-90A6-64B82EA9E8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
