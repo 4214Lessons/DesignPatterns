@@ -253,9 +253,9 @@ class Program
 
 class EndPointBuilder
 {
-    private string _baseUrl;
-    private StringBuilder _routeParameters;
-    private StringBuilder _queryStrings;
+    private readonly string _baseUrl;
+    private readonly StringBuilder _routeParameters;
+    private readonly StringBuilder _queryStrings;
 
 
     public EndPointBuilder(string baseUrl)

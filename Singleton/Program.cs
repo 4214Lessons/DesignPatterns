@@ -55,7 +55,7 @@ class President
 
 
 
-    public static object _lock = new object();
+    public static object _lock = new();
 
     private static President? _instance = null;
 

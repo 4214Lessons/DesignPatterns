@@ -79,9 +79,9 @@ class PepsiFactory : AbstractFactory
 
 class Client
 {
-    AbstractWater _water = null;
-    AbstractBottle _bottle = null;
-    AbstractCover _cover = null;
+    private readonly AbstractWater _water = null;
+    private readonly AbstractBottle _bottle = null;
+    private readonly AbstractCover _cover = null;
 
     public Client(AbstractFactory factory)
     {
