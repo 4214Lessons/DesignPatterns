@@ -4,7 +4,7 @@
 interface ISystemItem
 {
     string? Name { get; set; }
-    string? Path { get; set; }
+    string? Location { get; set; }
     double Size { get; }
 }
 
@@ -13,14 +13,14 @@ interface ISystemItem
 class File : ISystemItem
 {
     public string? Name { get; set; }
-    public string? Path { get; set; }
+    public string? Location { get; set; }
     public double Size { get; }
 
 
-    public File(string? name, double size, string? path = "")
+    public File(string? name, double size, string? location = "")
     {
         Name = name;
-        Path = path;
+        Location = location;
         Size = size;
     }
 }
@@ -30,16 +30,16 @@ class Folder : ISystemItem
 {
     private readonly List<ISystemItem> _systemItems;
 
-    public Folder(string? name, string? path)
+    public Folder(string? name, string? location)
     {
         Name = name;
-        Path = path;
+        Location = location;
 
         _systemItems = new();
     }
 
     public string? Name { get; set; }
-    public string? Path { get; set; }
+    public string? Location { get; set; }
     public double Size
     {
         get
@@ -52,8 +52,7 @@ class Folder : ISystemItem
 
     public void Add(ISystemItem item)
     {
-        item.Path = $@"{Path}\{item.Name}";
-
+        item.Location = $@"{Location}\{item.Name}";
         _systemItems.Add(item);
     }
 
@@ -80,19 +79,21 @@ class Program
 
         folderAdobe.Add(new File("AdobeFile1.cs", 1.5));
         folderAdobe.Add(new File("AdobeFile2.txt", 3.2));
+
         folderMicrosoft.Add(new File("MicrosoftFile.png", 3));
+
         folderUsers.Add(new File("UsersFile.txt", 2.5));
+
         folderProgramFiles.Add(new File("ProgramFilesFile.json", 0.5));
-
-
         folderProgramFiles.Add(folderAdobe);
         folderProgramFiles.Add(folderMicrosoft);
+
 
         folderC.Add(folderProgramFiles);
         folderC.Add(folderUsers);
 
 
-        Console.WriteLine(folderC.Size);
+        Console.WriteLine(folderProgramFiles.Size);
     }
 }
 
@@ -100,6 +101,8 @@ class Program
 
 // C:\
 // C:\Program Files
+
 // C:\Program Files\Adobe
 // C:\Program Files\Microsoft
+
 // C:\Users
