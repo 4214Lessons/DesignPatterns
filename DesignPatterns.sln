@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{38903337-324C-439D-90A6-64B82EA9E8D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{A2B4ECDE-A3A5-476D-9D2C-8F48042B984D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{E39E4D29-30E3-4295-A2FB-E7A745FAE574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{E39E4D29-30E3-4295-A2FB-E7A745FAE574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{97783A36-188F-496A-8EF5-A70A6FE07D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{97783A36-188F-496A-8EF5-A70A6FE07D9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{53EAC1C0-FCC8-48A4-8ED0-3CABA457F4C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{53EAC1C0-FCC8-48A4-8ED0-3CABA457F4C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{603EEF34-6030-4E6B-A8B6-7CBA40451008}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{53EAC1C0-FCC8-48A4-8ED0-3CABA457F4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53EAC1C0-FCC8-48A4-8ED0-3CABA457F4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53EAC1C0-FCC8-48A4-8ED0-3CABA457F4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603EEF34-6030-4E6B-A8B6-7CBA40451008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603EEF34-6030-4E6B-A8B6-7CBA40451008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603EEF34-6030-4E6B-A8B6-7CBA40451008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603EEF34-6030-4E6B-A8B6-7CBA40451008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
