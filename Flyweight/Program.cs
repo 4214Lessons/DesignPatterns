@@ -49,22 +49,19 @@ class FlyWeightFactory
 
     public Player? GetUnit(string key)
     {
-        Player? unit = null;
+        Player? unit;
 
 
         if (_units.ContainsKey(key))
             unit = _units[key];
         else
         {
-            switch (key)
+            unit = key switch
             {
-                case "Archer":
-                    unit = new Archer();
-                    break;
-                case "Warrior":
-                    unit = new Warrior();
-                    break;
-            }
+                "Archer" => new Archer(),
+                "Warrior" => new Warrior(),
+                _ => null
+            };
 
             _units.Add(key, unit);
         }
@@ -81,7 +78,7 @@ class Program
         FlyWeightFactory factory = new();
         Player? player;
 
-        for (int i = 0; i < 1000000000; i++)
+        for (int i = 0; i < 10000000; i++)
         {
             // player = new Archer();
 
