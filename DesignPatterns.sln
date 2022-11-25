@@ -17,11 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{53EAC1C0-FCC8-48A4-8ED0-3CABA457F4C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{603EEF34-6030-4E6B-A8B6-7CBA40451008}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{603EEF34-6030-4E6B-A8B6-7CBA40451008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{0525417C-CDD5-4186-8D70-45B6B98432E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{0525417C-CDD5-4186-8D70-45B6B98432E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{D5119DEC-B629-41B3-ABE4-27C21BB9BAE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{D5119DEC-B629-41B3-ABE4-27C21BB9BAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyweight.csproj", "{BF76F626-84DC-4DDD-9E6E-4908A4CBC339}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{D5119DEC-B629-41B3-ABE4-27C21BB9BAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5119DEC-B629-41B3-ABE4-27C21BB9BAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5119DEC-B629-41B3-ABE4-27C21BB9BAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF76F626-84DC-4DDD-9E6E-4908A4CBC339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF76F626-84DC-4DDD-9E6E-4908A4CBC339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF76F626-84DC-4DDD-9E6E-4908A4CBC339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF76F626-84DC-4DDD-9E6E-4908A4CBC339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
